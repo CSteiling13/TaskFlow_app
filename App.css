@@ -1,0 +1,304 @@
+* {
+
+  input,
+select,
+textarea {
+  color: #0f172a;
+  background-color: white;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input[type="date"] {
+  color-scheme: light;
+  color: #0f172a;
+}
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #60a5fa, transparent 30%),
+    linear-gradient(135deg, #0f172a, #1e293b);
+  color: #0f172a;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 0;
+  color: #0f172a;
+}
+
+.hero-text {
+  color: #64748b;
+  font-size: 17px;
+  max-width: 530px;
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+}
+
+.stats div {
+  background: #eff6ff;
+  padding: 18px;
+  border-radius: 18px;
+  min-width: 95px;
+  text-align: center;
+}
+
+.stats span {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.stats p {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+.task-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 150px;
+  gap: 14px;
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 800;
+  color: #475569;
+}
+
+input,
+select {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: 3px solid #bfdbfe;
+  border-color: #2563eb;
+}
+
+.create-btn {
+  align-self: end;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.35);
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.section-title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title p {
+  margin: 5px 0 0;
+  color: #64748b;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 18px;
+  border-radius: 18px;
+  transition: 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.1);
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.task-main h3 {
+  margin: 0;
+}
+
+.task-main p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.priority-dot {
+  width: 14px;
+  height: 54px;
+  border-radius: 999px;
+  background: #facc15;
+}
+
+.priority-dot.low {
+  background: #22c55e;
+}
+
+.priority-dot.medium {
+  background: #f59e0b;
+}
+
+.priority-dot.high {
+  background: #ef4444;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.task-buttons button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.done-btn {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.completed {
+  opacity: 0.65;
+  background: #f8fafc;
+}
+
+.completed h3 {
+  text-decoration: line-through;
+}
+
+.empty {
+  text-align: center;
+  padding: 45px;
+  background: #f8fafc;
+  border-radius: 18px;
+  color: #64748b;
+}
+
+.empty h3 {
+  color: #0f172a;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats {
+    width: 100%;
+  }
+
+  .stats div {
+    flex: 1;
+  }
+
+  .task-form {
+    grid-template-columns: 1fr;
+  }
+
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-buttons {
+    width: 100%;
+  }
+
+  .task-buttons button {
+    flex: 1;
+  }
+}
